@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <div id="root"></div>
+  <script>
+    // let itsMe = {
+    //   1 : "kongukjae",
+    //   2 : 20,
+    //   3 : "developer",
+    //   4 : "oracle"
+    // };
+    // console.log(itsMe.1); 에러남
+    // console.log(itsMe[1]);
+
+    let itsMe = ["kongukjae",20,"developer","oracle"] 
+                 //순서가 필요하지 않으면 객체만 쓴다
+      //순서가 필요하다 배열, 이름이 필요하다 객체
+    console.log(itsMe[2])
+
+    console.log("--------------")
+
+    console.log(typeof(itsMe)) //타입확인해주는것 오브젝트라고 나옴
+    console.log(itsMe[0])
+    console.log(itsMe[1])
+    console.log(itsMe[2])
+    console.log(itsMe[3]) //4번째 아니고 3번째라고함
+  </script>
+</body>
+</html>

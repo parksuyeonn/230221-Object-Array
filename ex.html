@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <div id="root"></div>
+  <script>
+    let start = {
+      at : "home",
+      order : ["기상", "물한잔", "씻기","옷입기"]
+    };
+    let inPrograss = {
+      at : "road",
+      order : ["걷기","기차","지하철"]
+    };
+    let end = {
+      at : "academy",
+      order : ["물","화장실","컴퓨터"] 
+    };
+    let lifeCycle = [start, inPrograss, end];
+
+    
+    console.log(lifeCycle);
+    console.log(start.order[2]+start.at);
+    console.log(typeof(start).order[2])
+
+    //document.querySelector('inPrograss');
+    document.getElementsByClassName('inPrograss')
+    console.log(inPrograss);
+    //document.getElementById('').style.backgroundColor = 'beige';
+
+    document.querySelectorAll('end')
+    console.log(end); 
+  </script>
+</body>
+</html>

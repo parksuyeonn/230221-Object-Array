@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <div id="root"></div>
+
+  <script>
+    let itsMe = {
+      name : "kongukjae",
+      age : 20,
+      job : "developer",
+      home : "oracle",
+      food : "water",
+      hobby : {
+        first : "coding",
+        second : "bookreading"
+      }
+    };
+    // let kongukjaeAboutName = "konguljae";
+    // let kongjaeAboutAge = 20;
+    // let kongukjaeAboutJob = "developer";
+    // let kongukjaeAboutHome = "oracle";
+    // let kongukjaeAboutFood = "water";
+    
+    console.log(itsMe.name);
+    console.log(itsMe["name"]);
+    console.log(itsMe["age"]);
+    console.log(itsMe["home"]);
+
+    console.log(itsMe["hobby"].first);
+    console.log(itsMe.hobby.first);
+    console.log(itsMe["hobby"]["second"]); //문자열들
+
+    console.log("---------");
+
+    let a = "ho";
+    let b = "bby";
+    console.log(itsMe[a+b]["second"]); //작성법들 암기해서 자유롭게 활용하기
+
+    console.log(itsMe.hobby["second"]); //작성법들 암기해서 자유롭게 활용하기
+    </script>
+</body>
+</html>
